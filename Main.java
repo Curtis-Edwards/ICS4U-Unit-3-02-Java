@@ -6,6 +6,8 @@
 * @since   2024-04-24
 */
 
+import java.util.Scanner;
+
 /**
 * This is the Main class.
 */
