@@ -23,12 +23,12 @@ final class Main {
         throw new IllegalStateException("Cannot be instantiated");
     }
 
-   /**
-     * This method calculates the factorial of a given integer using recursion.
-     *
-     * @param someInt the integer whose factorial is to be calculated
-     * @return the factorial of the given integer
-     */
+    /**
+    * This method calculates the factorial of a given integer using recursion.
+    *
+    * @param someInt the integer whose factorial is to be calculated
+    * @return the factorial of the given integer
+    */
     public static int factorial(int someInt) {
         int returnValue = 0;
         if (someInt < 0) {
@@ -44,8 +44,13 @@ final class Main {
         return returnValue;
     }
 
+    /**
+    * The starting main() function.
+    *
+    * @param args No args will be used
+    */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        final Scanner scanner = new Scanner(System.in);
         System.out.print("Entered = ");
         final int someInt = scanner.nextInt();
         final int factorialOfInt = factorial(someInt);
